@@ -15,6 +15,13 @@
 		8EF3D992262AD2FF00B1CD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF3D990262AD2FF00B1CD40 /* LaunchScreen.storyboard */; };
 		8EF3D99D262AD2FF00B1CD40 /* MomoShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3D99C262AD2FF00B1CD40 /* MomoShareTests.swift */; };
 		8EF3D9A8262AD30000B1CD40 /* MomoShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3D9A7262AD30000B1CD40 /* MomoShareUITests.swift */; };
+		8EF3D9B9262AD32F00B1CD40 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EF3D9B8262AD32F00B1CD40 /* Icon.png */; };
+		8EF3D9C7262AD41A00B1CD40 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3D9C6262AD41A00B1CD40 /* ShareViewController.swift */; };
+		8EF3D9CA262AD41A00B1CD40 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF3D9C8262AD41A00B1CD40 /* MainInterface.storyboard */; };
+		8EF3D9CE262AD41A00B1CD40 /* MomoExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8EF3D9C4262AD41A00B1CD40 /* MomoExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FEC620C0262BDD5100E5446E /* ShareError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC620BF262BDD5100E5446E /* ShareError.swift */; };
+		FEC620C4262C377000E5446E /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC620C3262C377000E5446E /* StaticData.swift */; };
+		FEC620C5262C377000E5446E /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC620C3262C377000E5446E /* StaticData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +39,28 @@
 			remoteGlobalIDString = 8EF3D981262AD2FD00B1CD40;
 			remoteInfo = MomoShare;
 		};
+		8EF3D9CC262AD41A00B1CD40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EF3D97A262AD2FC00B1CD40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EF3D9C3262AD41A00B1CD40;
+			remoteInfo = MomoExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8EF3D9D2262AD41A00B1CD40 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8EF3D9CE262AD41A00B1CD40 /* MomoExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8EF3D982262AD2FD00B1CD40 /* MomoShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomoShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +77,15 @@
 		8EF3D9A3262AD30000B1CD40 /* MomoShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomoShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF3D9A7262AD30000B1CD40 /* MomoShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomoShareUITests.swift; sourceTree = "<group>"; };
 		8EF3D9A9262AD30000B1CD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF3D9B8262AD32F00B1CD40 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8EF3D9C4262AD41A00B1CD40 /* MomoExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MomoExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF3D9C6262AD41A00B1CD40 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		8EF3D9C9262AD41A00B1CD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8EF3D9CB262AD41A00B1CD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC620BF262BDD5100E5446E /* ShareError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareError.swift; sourceTree = "<group>"; };
+		FEC620C1262C33CA00E5446E /* MomoShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MomoShare.entitlements; sourceTree = "<group>"; };
+		FEC620C2262C357D00E5446E /* MomoExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MomoExtension.entitlements; sourceTree = "<group>"; };
+		FEC620C3262C377000E5446E /* StaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8EF3D9C1262AD41A00B1CD40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +126,7 @@
 				8EF3D984262AD2FD00B1CD40 /* MomoShare */,
 				8EF3D99B262AD2FF00B1CD40 /* MomoShareTests */,
 				8EF3D9A6262AD30000B1CD40 /* MomoShareUITests */,
+				8EF3D9C5262AD41A00B1CD40 /* MomoExtension */,
 				8EF3D983262AD2FD00B1CD40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +137,7 @@
 				8EF3D982262AD2FD00B1CD40 /* MomoShare.app */,
 				8EF3D998262AD2FF00B1CD40 /* MomoShareTests.xctest */,
 				8EF3D9A3262AD30000B1CD40 /* MomoShareUITests.xctest */,
+				8EF3D9C4262AD41A00B1CD40 /* MomoExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +145,8 @@
 		8EF3D984262AD2FD00B1CD40 /* MomoShare */ = {
 			isa = PBXGroup;
 			children = (
+				FEC620C1262C33CA00E5446E /* MomoShare.entitlements */,
+				8EF3D9B8262AD32F00B1CD40 /* Icon.png */,
 				8EF3D985262AD2FD00B1CD40 /* AppDelegate.swift */,
 				8EF3D987262AD2FD00B1CD40 /* SceneDelegate.swift */,
 				8EF3D989262AD2FD00B1CD40 /* ViewController.swift */,
@@ -106,6 +154,7 @@
 				8EF3D98E262AD2FF00B1CD40 /* Assets.xcassets */,
 				8EF3D990262AD2FF00B1CD40 /* LaunchScreen.storyboard */,
 				8EF3D993262AD2FF00B1CD40 /* Info.plist */,
+				FEC620C3262C377000E5446E /* StaticData.swift */,
 			);
 			path = MomoShare;
 			sourceTree = "<group>";
@@ -128,6 +177,18 @@
 			path = MomoShareUITests;
 			sourceTree = "<group>";
 		};
+		8EF3D9C5262AD41A00B1CD40 /* MomoExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8EF3D9C6262AD41A00B1CD40 /* ShareViewController.swift */,
+				8EF3D9C8262AD41A00B1CD40 /* MainInterface.storyboard */,
+				8EF3D9CB262AD41A00B1CD40 /* Info.plist */,
+				FEC620C2262C357D00E5446E /* MomoExtension.entitlements */,
+				FEC620BF262BDD5100E5446E /* ShareError.swift */,
+			);
+			path = MomoExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +199,12 @@
 				8EF3D97E262AD2FD00B1CD40 /* Sources */,
 				8EF3D97F262AD2FD00B1CD40 /* Frameworks */,
 				8EF3D980262AD2FD00B1CD40 /* Resources */,
+				8EF3D9D2262AD41A00B1CD40 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8EF3D9CD262AD41A00B1CD40 /* PBXTargetDependency */,
 			);
 			name = MomoShare;
 			productName = MomoShare;
@@ -184,6 +247,23 @@
 			productReference = 8EF3D9A3262AD30000B1CD40 /* MomoShareUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8EF3D9C3262AD41A00B1CD40 /* MomoExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EF3D9CF262AD41A00B1CD40 /* Build configuration list for PBXNativeTarget "MomoExtension" */;
+			buildPhases = (
+				8EF3D9C0262AD41A00B1CD40 /* Sources */,
+				8EF3D9C1262AD41A00B1CD40 /* Frameworks */,
+				8EF3D9C2262AD41A00B1CD40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MomoExtension;
+			productName = MomoExtension;
+			productReference = 8EF3D9C4262AD41A00B1CD40 /* MomoExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +284,9 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 8EF3D981262AD2FD00B1CD40;
 					};
+					8EF3D9C3262AD41A00B1CD40 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 8EF3D97D262AD2FC00B1CD40 /* Build configuration list for PBXProject "MomoShare" */;
@@ -222,6 +305,7 @@
 				8EF3D981262AD2FD00B1CD40 /* MomoShare */,
 				8EF3D997262AD2FF00B1CD40 /* MomoShareTests */,
 				8EF3D9A2262AD30000B1CD40 /* MomoShareUITests */,
+				8EF3D9C3262AD41A00B1CD40 /* MomoExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF3D9B9262AD32F00B1CD40 /* Icon.png in Resources */,
 				8EF3D992262AD2FF00B1CD40 /* LaunchScreen.storyboard in Resources */,
 				8EF3D98F262AD2FF00B1CD40 /* Assets.xcassets in Resources */,
 				8EF3D98D262AD2FD00B1CD40 /* Main.storyboard in Resources */,
@@ -251,6 +336,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8EF3D9C2262AD41A00B1CD40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF3D9CA262AD41A00B1CD40 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EF3D98A262AD2FD00B1CD40 /* ViewController.swift in Sources */,
+				FEC620C4262C377000E5446E /* StaticData.swift in Sources */,
 				8EF3D986262AD2FD00B1CD40 /* AppDelegate.swift in Sources */,
 				8EF3D988262AD2FD00B1CD40 /* SceneDelegate.swift in Sources */,
 			);
@@ -280,6 +374,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8EF3D9C0262AD41A00B1CD40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC620C0262BDD5100E5446E /* ShareError.swift in Sources */,
+				8EF3D9C7262AD41A00B1CD40 /* ShareViewController.swift in Sources */,
+				FEC620C5262C377000E5446E /* StaticData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +396,11 @@
 			isa = PBXTargetDependency;
 			target = 8EF3D981262AD2FD00B1CD40 /* MomoShare */;
 			targetProxy = 8EF3D9A4262AD30000B1CD40 /* PBXContainerItemProxy */;
+		};
+		8EF3D9CD262AD41A00B1CD40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EF3D9C3262AD41A00B1CD40 /* MomoExtension */;
+			targetProxy = 8EF3D9CC262AD41A00B1CD40 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +419,14 @@
 				8EF3D991262AD2FF00B1CD40 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8EF3D9C8262AD41A00B1CD40 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EF3D9C9262AD41A00B1CD40 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -366,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,8 +551,10 @@
 		8EF3D9AD262AD30000B1CD40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MomoShare/MomoShare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R45LY736NP;
 				INFOPLIST_FILE = MomoShare/Info.plist;
@@ -453,8 +572,10 @@
 		8EF3D9AE262AD30000B1CD40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MomoShare/MomoShare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R45LY736NP;
 				INFOPLIST_FILE = MomoShare/Info.plist;
@@ -553,6 +674,46 @@
 			};
 			name = Release;
 		};
+		8EF3D9D0262AD41A00B1CD40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MomoExtension/MomoExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R45LY736NP;
+				INFOPLIST_FILE = MomoExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fxr.MomoShare.MomoExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EF3D9D1262AD41A00B1CD40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MomoExtension/MomoExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R45LY736NP;
+				INFOPLIST_FILE = MomoExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fxr.MomoShare.MomoExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,6 +749,15 @@
 			buildConfigurations = (
 				8EF3D9B3262AD30000B1CD40 /* Debug */,
 				8EF3D9B4262AD30000B1CD40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EF3D9CF262AD41A00B1CD40 /* Build configuration list for PBXNativeTarget "MomoExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF3D9D0262AD41A00B1CD40 /* Debug */,
+				8EF3D9D1262AD41A00B1CD40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

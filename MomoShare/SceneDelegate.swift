@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  MomoShare
 //
-//  Created by 研发部-陆续 on 2021/4/17.
+//  Created by momo on 2021/4/17.
 //
 
 import UIKit
